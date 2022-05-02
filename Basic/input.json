@@ -1,0 +1,5 @@
+{
+  "user": "foobar",
+  "action": "sudo",
+  "group": "admin"
+}
