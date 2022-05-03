@@ -1,0 +1,6 @@
+{
+  "user": "foobar",
+  "action": "sudo",
+  "group": "admin",
+  "network": "home"
+}

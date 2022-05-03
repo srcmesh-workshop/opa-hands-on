@@ -1,6 +1,0 @@
-{
-  "admin": {
-    "action": "sudo",
-    "groups": ["admin", "wheel"]
-  }
-}

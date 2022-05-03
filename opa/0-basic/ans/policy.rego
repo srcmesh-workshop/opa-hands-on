@@ -1,8 +1,8 @@
 package opa
 
-default admin = false
+default allow = false
 
-admin {
+allow {
     input.action == data.admin.action
     data.admin.groups[_] == input.group
 }

@@ -1,0 +1,7 @@
+{
+  "admin": {
+    "action": "sudo",
+    "groups": ["admin", "wheel"],
+    "allowNetworks": ["local", "office"]
+  }
+}
