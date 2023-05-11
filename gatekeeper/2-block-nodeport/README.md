@@ -10,7 +10,6 @@ spec:
   ports:
     - port: 80
       targetPort: 80
-      nodePort: 30007
 ```
 
 1. Write a `constraint template` that blocks NodePort service like above to be created.
