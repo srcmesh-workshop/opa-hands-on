@@ -1,0 +1,11 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sAllowCertainTypeService
+metadata:
+  name: allowed-node-port
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Service"]
+  parameters:
+    allowed_svc_type: ["ExternalName", "LoadBalancer", "ClusterIP"]

@@ -1,0 +1,17 @@
+apiVersion: templates.gatekeeper.sh/v1
+kind: ConstraintTemplate
+metadata:
+  name: myfirsttemplate<id>
+spec:
+  crd:
+    spec:
+      names:
+        kind: MyFirstTemplate<id>
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |
+        package myfirsttemplate<id>
+
+        violation[{"msg": msg}] {
+          msg := "my first pof violation"
+        }
